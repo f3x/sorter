@@ -1,2 +1,3 @@
 Splitting by bytes size
 Compare files size at the end and during sorting
+Usage() fix number arguments
