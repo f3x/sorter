@@ -1,0 +1,35 @@
+sorter.sh - simple bash script for sorting huge GB/TB text files
+
+sorting phases:
+-splitting
+-sort splitted parts
+-merge sorted parts
+
+script not configurable, but may be necessary to fix paths to sort
+and split binaries, check correspond lines in sorter.sh.
+
+usage:
+	./sorter.sh $0 max_lines filename result_filename
+	
+options: 
+	max_lines - number of lines for file splitting
+	filename  - input file (not sorted)
+	result_filename - output file (sorted result)
+
+usage example:
+	./sorter.sh 1600000 items sorted_items 
+	
+As result in current folder, will be created a number of files:
+
+- unsorted parts:
+part00000
+...
+part0000N
+ 
+- sorted parts:
+part00000.sorted
+...
+part0000N.sorted
+
+- result file (merged sort parts), see above result_filename
+
