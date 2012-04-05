@@ -19,7 +19,7 @@ options:
 usage example:
 	./sorter.sh 1600000 items sorted_items 
 	
-As result in current folder, will be created a number of files:
+as result in current folder, will be created a number of files:
 
 - unsorted parts:
 part00000
